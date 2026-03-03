@@ -55,25 +55,25 @@
   <nav class="navbar"><div class="nav-inner">
     <a href="/" class="nav-logo"><span>Global<span class="accent">Apex</span></span></a>
     <ul class="nav-menu">
-      <li><a href="/">Home</a></li><li><a href="/about.html">About</a></li><li><a href="/services.html">Services</a></li>
-      <li><a href="/case-studies.html">Case Studies</a></li><li><a href="/insights.html" class="active">Insights</a></li>
-      <li><a href="/contact.html" class="nav-cta">Contact Us</a></li>
+      <li><a href="/" data-i18n="nav_home">Home</a></li><li><a href="/about.html" data-i18n="nav_about">About</a></li><li><a href="/services.html" data-i18n="nav_services">Services</a></li>
+      <li><a href="/case-studies.html" data-i18n="nav_case_studies">Case Studies</a></li><li><a href="/insights.html" class="active" data-i18n="nav_insights">Insights</a></li>
+      <li><a href="/contact.html" class="nav-cta" data-i18n="nav_contact_us">Contact Us</a></li>
     </ul>
     <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
   </div></nav>
   <nav class="mobile-menu">
-    <a href="/">Home</a><a href="/about.html">About</a><a href="/services.html">Services</a>
-    <a href="/case-studies.html">Case Studies</a><a href="/insights.html">Insights</a>
-    <a href="/contact.html" class="btn btn-primary">Contact Us</a>
+    <a href="/" data-i18n="nav_home">Home</a><a href="/about.html" data-i18n="nav_about">About</a><a href="/services.html" data-i18n="nav_services">Services</a>
+    <a href="/case-studies.html" data-i18n="nav_case_studies">Case Studies</a><a href="/insights.html" data-i18n="nav_insights">Insights</a>
+    <a href="/contact.html" class="btn btn-primary" data-i18n="nav_contact_us">Contact Us</a>
   </nav>
 </header>
 
 <section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1920&auto=format&fit=crop&q=80');background-size:cover;background-position:center top;">
   <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(6,20,41,0.93) 0%,rgba(10,31,61,0.82) 100%);"></div>
   <div class="container" style="position:relative;z-index:2;">
-    <nav class="breadcrumb"><a href="/">Home</a><span>/</span><span class="current">Insights</span></nav>
-    <h1>Insights &amp; Thought Leadership</h1>
-    <p>Expert perspectives on change management, digital transformation, and building organizations that thrive in complexity.</p>
+    <nav class="breadcrumb"><a href="/" data-i18n="breadcrumb_home">Home</a><span>/</span><span class="current" data-i18n="nav_insights">Insights</span></nav>
+    <h1 data-i18n="ins_hero_h1">Insights &amp; Thought Leadership</h1>
+    <p data-i18n="ins_hero_p">Expert perspectives on change management, digital transformation, and building organizations that thrive in complexity.</p>
   </div>
 </section>
 
@@ -86,25 +86,25 @@
         <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&auto=format&fit=crop&q=80" alt="Change accelerators for organizational transformation success" loading="eager">
       </div>
       <div class="featured-insight-body">
-        <span class="featured-tag">Featured</span>
-        <h2>Unlocking Transformation Success with Global Apex Change Accelerators</h2>
-        <p>In today's rapidly evolving business landscape, organizational challenges are intensifying. Leaders face mounting pressure to deliver transformation faster, with fewer resources, and under greater scrutiny than ever before. Change Accelerators offer a way forward.</p>
+        <span class="featured-tag" data-i18n="ins_featured_tag">Featured</span>
+        <h2 data-i18n="ins_featured_h">Unlocking Transformation Success with Global Apex Change Accelerators</h2>
+        <p data-i18n="ins_featured_p">In today's rapidly evolving business landscape, organizational challenges are intensifying. Leaders face mounting pressure to deliver transformation faster, with fewer resources, and under greater scrutiny than ever before. Change Accelerators offer a way forward.</p>
         <div style="display:flex;gap:16px;margin:20px 0;flex-wrap:wrap;">
-          <span style="font-size:0.82rem;color:var(--text-light);">Change Management</span>
+          <span style="font-size:0.82rem;color:var(--text-light);" data-i18n="ins_featured_meta1">Change Management</span>
           <span style="font-size:0.82rem;color:var(--text-light);">&#183;</span>
-          <span style="font-size:0.82rem;color:var(--text-light);">Transformation Strategy</span>
+          <span style="font-size:0.82rem;color:var(--text-light);" data-i18n="ins_featured_meta2">Transformation Strategy</span>
         </div>
-        <a href="/contact.html" class="btn btn-primary">Download the Guide</a>
+        <a href="/contact.html" class="btn btn-primary" data-i18n="ins_featured_btn">Download the Guide</a>
       </div>
     </div>
 
     <!-- FILTER -->
     <div class="insights-filter reveal">
-      <button class="filter-btn active" data-filter="all">All Topics</button>
-      <button class="filter-btn" data-filter="change-management">Change Management</button>
-      <button class="filter-btn" data-filter="digital">Digital Transformation</button>
-      <button class="filter-btn" data-filter="leadership">Leadership</button>
-      <button class="filter-btn" data-filter="culture">Culture &amp; People</button>
+      <button class="filter-btn active" data-filter="all" data-i18n="ins_filter_all">All Topics</button>
+      <button class="filter-btn" data-filter="change-management" data-i18n="ins_filter_cm">Change Management</button>
+      <button class="filter-btn" data-filter="digital" data-i18n="ins_filter_digital">Digital Transformation</button>
+      <button class="filter-btn" data-filter="leadership" data-i18n="ins_filter_leadership">Leadership</button>
+      <button class="filter-btn" data-filter="culture" data-i18n="ins_filter_culture">Culture &amp; People</button>
     </div>
 
     <!-- ARTICLE GRID -->
@@ -116,9 +116,9 @@
         </div>
         <div class="insight-card-body">
           <div class="insight-meta"><span class="insight-cat">Change Management</span><span class="insight-dot"></span><span class="insight-date">Strategy</span></div>
-          <h3>The 7 Key Elements That Will Help You Build a Case for Change That Resonates</h3>
-          <p>Struggling to get buy-in for a critical change initiative? The way you build your case for change makes all the difference...</p>
-          <a href="/contact.html" class="read-more">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <h3 data-i18n="ins_art1_h">The 7 Key Elements That Will Help You Build a Case for Change That Resonates</h3>
+          <p data-i18n="ins_art1_p">Struggling to get buy-in for a critical change initiative? The way you build your case for change makes all the difference...</p>
+          <a href="/contact.html" class="read-more"><span data-i18n="shared_read_more">Read More</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </article>
 
@@ -128,9 +128,9 @@
         </div>
         <div class="insight-card-body">
           <div class="insight-meta"><span class="insight-cat">Strategy</span><span class="insight-dot"></span><span class="insight-date">Transformation</span></div>
-          <h3>Driving Strategic Objectives with an Effective Change Strategy</h3>
-          <p>Organizations are constantly challenged by forces outside their control. Here's how to build a change strategy that delivers strategic objectives...</p>
-          <a href="/contact.html" class="read-more">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <h3 data-i18n="ins_art2_h">Driving Strategic Objectives with an Effective Change Strategy</h3>
+          <p data-i18n="ins_art2_p">Organizations are constantly challenged by forces outside their control. Here's how to build a change strategy that delivers strategic objectives...</p>
+          <a href="/contact.html" class="read-more"><span data-i18n="shared_read_more">Read More</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </article>
 
@@ -140,9 +140,9 @@
         </div>
         <div class="insight-card-body">
           <div class="insight-meta"><span class="insight-cat">Capability</span><span class="insight-dot"></span><span class="insight-date">Competitive Advantage</span></div>
-          <h3>Developing the Most Crucial Competitive Advantage of a Large Organization</h3>
-          <p>In an era of continuous technological advances and shifting customer demands, change agility is the ultimate competitive advantage...</p>
-          <a href="/contact.html" class="read-more">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <h3 data-i18n="ins_art3_h">Developing the Most Crucial Competitive Advantage of a Large Organization</h3>
+          <p data-i18n="ins_art3_p">In an era of continuous technological advances and shifting customer demands, change agility is the ultimate competitive advantage...</p>
+          <a href="/contact.html" class="read-more"><span data-i18n="shared_read_more">Read More</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </article>
 
@@ -152,9 +152,9 @@
         </div>
         <div class="insight-card-body">
           <div class="insight-meta"><span class="insight-cat">Leadership</span><span class="insight-dot"></span><span class="insight-date">Sponsorship</span></div>
-          <h3>Change Sponsors: The Transformation Trailblazers</h3>
-          <p>Been asked to play a Change Sponsor role without a clear understanding of what it means? This guide explains the role and how to excel in it...</p>
-          <a href="/contact.html" class="read-more">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <h3 data-i18n="ins_art4_h">Change Sponsors: The Transformation Trailblazers</h3>
+          <p data-i18n="ins_art4_p">Been asked to play a Change Sponsor role without a clear understanding of what it means? This guide explains the role and how to excel in it...</p>
+          <a href="/contact.html" class="read-more"><span data-i18n="shared_read_more">Read More</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </article>
 
@@ -164,9 +164,9 @@
         </div>
         <div class="insight-card-body">
           <div class="insight-meta"><span class="insight-cat">Digital Transformation</span><span class="insight-dot"></span><span class="insight-date">Research</span></div>
-          <h3>The 5 Reasons Why Organization Change Programs Fail in Today's Digital World</h3>
-          <p>70% of projects still fail to achieve desired results. Discover the five most common reasons — and how to avoid them in your transformation...</p>
-          <a href="/contact.html" class="read-more">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <h3 data-i18n="ins_art5_h">The 5 Reasons Why Organization Change Programs Fail in Today's Digital World</h3>
+          <p data-i18n="ins_art5_p">70% of projects still fail to achieve desired results. Discover the five most common reasons — and how to avoid them in your transformation...</p>
+          <a href="/contact.html" class="read-more"><span data-i18n="shared_read_more">Read More</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </article>
 
@@ -176,9 +176,9 @@
         </div>
         <div class="insight-card-body">
           <div class="insight-meta"><span class="insight-cat">Employee Experience</span><span class="insight-dot"></span><span class="insight-date">Digital</span></div>
-          <h3>A Fresh Look at Employee Experience: Accelerating Business Results from Digital Investments</h3>
-          <p>Employee Experience has become a buzz word — but what does it truly mean for the outcomes of your digital transformation programs?</p>
-          <a href="/contact.html" class="read-more">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <h3 data-i18n="ins_art6_h">A Fresh Look at Employee Experience: Accelerating Business Results from Digital Investments</h3>
+          <p data-i18n="ins_art6_p">Employee Experience has become a buzz word — but what does it truly mean for the outcomes of your digital transformation programs?</p>
+          <a href="/contact.html" class="read-more"><span data-i18n="shared_read_more">Read More</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </article>
 
@@ -188,9 +188,9 @@
         </div>
         <div class="insight-card-body">
           <div class="insight-meta"><span class="insight-cat">Leadership</span><span class="insight-dot"></span><span class="insight-date">Capability</span></div>
-          <h3>Lead From Every Level: Building Organization-Wide Leadership Capabilities</h3>
-          <p>The most resilient organizations don't rely on a handful of leaders — they build leadership as an organizational capability at every level...</p>
-          <a href="/contact.html" class="read-more">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <h3 data-i18n="ins_art7_h">Lead From Every Level: Building Organization-Wide Leadership Capabilities</h3>
+          <p data-i18n="ins_art7_p">The most resilient organizations don't rely on a handful of leaders — they build leadership as an organizational capability at every level...</p>
+          <a href="/contact.html" class="read-more"><span data-i18n="shared_read_more">Read More</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </article>
 
@@ -200,9 +200,9 @@
         </div>
         <div class="insight-card-body">
           <div class="insight-meta"><span class="insight-cat">Change Management</span><span class="insight-dot"></span><span class="insight-date">Remote Work</span></div>
-          <h3>Making Change Happen When People are Working Remotely</h3>
-          <p>Enabling effective change in the face of disruption requires new approaches. Discover how to lead transformation in distributed, hybrid environments...</p>
-          <a href="/contact.html" class="read-more">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <h3 data-i18n="ins_art8_h">Making Change Happen When People are Working Remotely</h3>
+          <p data-i18n="ins_art8_p">Enabling effective change in the face of disruption requires new approaches. Discover how to lead transformation in distributed, hybrid environments...</p>
+          <a href="/contact.html" class="read-more"><span data-i18n="shared_read_more">Read More</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </article>
 
@@ -212,9 +212,9 @@
         </div>
         <div class="insight-card-body">
           <div class="insight-meta"><span class="insight-cat">Culture</span><span class="insight-dot"></span><span class="insight-date">People</span></div>
-          <h3>Building Psychological Safety in the Workplace: Make Trust Your #1 Currency</h3>
-          <p>The organizations that successfully navigate change are those where people feel safe to speak up, take risks, and challenge the status quo...</p>
-          <a href="/contact.html" class="read-more">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <h3 data-i18n="ins_art9_h">Building Psychological Safety in the Workplace: Make Trust Your #1 Currency</h3>
+          <p data-i18n="ins_art9_p">The organizations that successfully navigate change are those where people feel safe to speak up, take risks, and challenge the status quo...</p>
+          <a href="/contact.html" class="read-more"><span data-i18n="shared_read_more">Read More</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </article>
 
@@ -224,9 +224,9 @@
         </div>
         <div class="insight-card-body">
           <div class="insight-meta"><span class="insight-cat">Digital Transformation</span><span class="insight-dot"></span><span class="insight-date">Finance</span></div>
-          <h3>Digital Transformation in Accounting: Overcoming the Dependence on Traditional Assets</h3>
-          <p>The rate of technological disruption in accounting is accelerating. Here's how finance functions can lead — not resist — the change...</p>
-          <a href="/contact.html" class="read-more">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <h3 data-i18n="ins_art10_h">Digital Transformation in Accounting: Overcoming the Dependence on Traditional Assets</h3>
+          <p data-i18n="ins_art10_p">The rate of technological disruption in accounting is accelerating. Here's how finance functions can lead — not resist — the change...</p>
+          <a href="/contact.html" class="read-more"><span data-i18n="shared_read_more">Read More</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </article>
 
@@ -236,9 +236,9 @@
         </div>
         <div class="insight-card-body">
           <div class="insight-meta"><span class="insight-cat">HR &amp; People</span><span class="insight-dot"></span><span class="insight-date">Digital</span></div>
-          <h3>HR Can Be the Hero of Your Digital Transformation</h3>
-          <p>Too often HR is brought into transformation programs too late. Here's how progressive HR functions are leading digital change from the front...</p>
-          <a href="/contact.html" class="read-more">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <h3 data-i18n="ins_art11_h">HR Can Be the Hero of Your Digital Transformation</h3>
+          <p data-i18n="ins_art11_p">Too often HR is brought into transformation programs too late. Here's how progressive HR functions are leading digital change from the front...</p>
+          <a href="/contact.html" class="read-more"><span data-i18n="shared_read_more">Read More</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </article>
 
@@ -248,9 +248,9 @@
         </div>
         <div class="insight-card-body">
           <div class="insight-meta"><span class="insight-cat">Leadership</span><span class="insight-dot"></span><span class="insight-date">Digital</span></div>
-          <h3>The Critical Role of Leadership in Accelerating Digital Transformation</h3>
-          <p>Digital transformation is a leadership challenge before it is a technology challenge. Discover what distinguishes leaders who drive transformation success...</p>
-          <a href="/contact.html" class="read-more">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <h3 data-i18n="ins_art12_h">The Critical Role of Leadership in Accelerating Digital Transformation</h3>
+          <p data-i18n="ins_art12_p">Digital transformation is a leadership challenge before it is a technology challenge. Discover what distinguishes leaders who drive transformation success...</p>
+          <a href="/contact.html" class="read-more"><span data-i18n="shared_read_more">Read More</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </article>
 
@@ -262,32 +262,33 @@
 <section class="section section--dark" aria-label="Subscribe to insights">
   <div class="container">
     <div style="text-align:center;max-width:600px;margin:0 auto;" class="reveal">
-      <span class="section-label">Stay Informed</span>
-      <h2 style="color:white;margin-bottom:16px;">Get Transformation Insights in Your Inbox</h2>
-      <p style="color:rgba(255,255,255,0.7);margin-bottom:36px;">Join change management leaders who receive our latest thinking on transformation, leadership, and organizational effectiveness.</p>
+      <span class="section-label" data-i18n="ins_newsletter_label">Stay Informed</span>
+      <h2 style="color:white;margin-bottom:16px;" data-i18n="ins_newsletter_h">Get Transformation Insights in Your Inbox</h2>
+      <p style="color:rgba(255,255,255,0.7);margin-bottom:36px;" data-i18n="ins_newsletter_p">Join change management leaders who receive our latest thinking on transformation, leadership, and organizational effectiveness.</p>
       <form action="/contact-handler.php" method="POST" style="display:flex;gap:12px;max-width:480px;margin:0 auto;" onsubmit="this.querySelector('button').textContent='Subscribed!';">
-        <input type="email" name="newsletter_email" placeholder="Your work email address" required style="flex:1;padding:14px 18px;border:1.5px solid rgba(255,255,255,0.2);border-radius:4px;background:rgba(255,255,255,0.08);color:white;font-family:var(--font-body);font-size:0.95rem;">
+        <input type="email" name="newsletter_email" placeholder="Your work email address" data-i18n-ph="ins_newsletter_ph" required style="flex:1;padding:14px 18px;border:1.5px solid rgba(255,255,255,0.2);border-radius:4px;background:rgba(255,255,255,0.08);color:white;font-family:var(--font-body);font-size:0.95rem;">
         <input type="hidden" name="type" value="newsletter">
-        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <button type="submit" class="btn btn-primary" data-i18n="ins_newsletter_btn">Subscribe</button>
       </form>
-      <p style="color:rgba(255,255,255,0.4);font-size:0.8rem;margin-top:14px;">No spam. Unsubscribe anytime.</p>
+      <p style="color:rgba(255,255,255,0.4);font-size:0.8rem;margin-top:14px;" data-i18n="ins_newsletter_note">No spam. Unsubscribe anytime.</p>
     </div>
   </div>
 </section>
 
 <section class="cta-section"><div class="container"><div class="reveal">
-  <h2>Want Expert Guidance for Your Transformation?</h2>
-  <p>Talk to a Global Apex consultant about your specific change challenge.</p>
-  <div class="cta-actions"><a href="/contact.html" class="btn btn-white btn-lg">Schedule a Consultation</a><a href="/services.html" class="btn btn-white-outline btn-lg">Our Services</a></div>
+  <h2 data-i18n="ins_cta_h">Want Expert Guidance for Your Transformation?</h2>
+  <p data-i18n="ins_cta_p">Talk to a Global Apex consultant about your specific change challenge.</p>
+  <div class="cta-actions"><a href="/contact.html" class="btn btn-white btn-lg" data-i18n="ins_cta_btn1">Schedule a Consultation</a><a href="/services.html" class="btn btn-white-outline btn-lg" data-i18n="ins_cta_btn2">Our Services</a></div>
 </div></div></section>
 
 <footer class="footer"><div class="footer-top"><div class="container"><div class="footer-grid">
-  <div class="footer-brand"><div class="footer-logo">Global<span>Apex</span></div><p>Helping large enterprises navigate complex transformation and build sustainable change capability.</p></div>
-  <div class="footer-nav"><h4>Company</h4><ul><li><a href="/about.html">About Us</a></li><li><a href="/case-studies.html">Case Studies</a></li><li><a href="/insights.html">Insights</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-  <div class="footer-nav"><h4>Services</h4><ul><li><a href="/services.html#strategy">Change Strategy</a></li><li><a href="/services.html#delivery">Change Delivery</a></li><li><a href="/services.html#capability">Capability Building</a></li><li><a href="/services.html#accelerators">Change Accelerators</a></li></ul></div>
-  <div class="footer-nav"><h4>Contact</h4><ul><li><a href="mailto:contact@globalapex.net">contact@globalapex.net</a></li><li><a href="tel:+33642610725">+33 6 42610725</a></li></ul></div>
+  <div class="footer-brand"><div class="footer-logo">Global<span>Apex</span></div><p data-i18n="footer_tagline_short">Helping large enterprises navigate complex transformation and build sustainable change capability.</p></div>
+  <div class="footer-nav"><h4 data-i18n="footer_h_company">Company</h4><ul><li><a href="/about.html" data-i18n="footer_about_us">About Us</a></li><li><a href="/case-studies.html" data-i18n="footer_case_studies">Case Studies</a></li><li><a href="/insights.html" data-i18n="footer_insights">Insights</a></li><li><a href="/contact.html" data-i18n="footer_contact">Contact</a></li></ul></div>
+  <div class="footer-nav"><h4 data-i18n="footer_h_services">Services</h4><ul><li><a href="/services.html#strategy" data-i18n="footer_strategy">Change Strategy</a></li><li><a href="/services.html#delivery" data-i18n="footer_delivery">Change Delivery</a></li><li><a href="/services.html#capability" data-i18n="footer_capability">Capability Building</a></li><li><a href="/services.html#accelerators" data-i18n="footer_accelerators">Change Accelerators</a></li></ul></div>
+  <div class="footer-nav"><h4 data-i18n="footer_h_contact">Contact</h4><ul><li><a href="mailto:contact@globalapex.net">contact@globalapex.net</a></li><li><a href="tel:+33642610725">+33 6 42610725</a></li></ul></div>
 </div></div></div>
-<div class="container"><div class="footer-bottom"><p class="footer-copy">&copy; 2025 Global Apex SAS. All rights reserved.</p><div class="footer-legal"><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Use</a></div></div></div></footer>
+<div class="container"><div class="footer-bottom"><p class="footer-copy" data-i18n="footer_copyright">&copy; 2025 Global Apex SAS. All rights reserved.</p><div class="footer-legal"><a href="/privacy.html" data-i18n="footer_privacy">Privacy Policy</a><a href="/terms.html" data-i18n="footer_terms">Terms of Use</a></div></div></div></footer>
+<script src="/assets/js/i18n.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
 <script>
   // Simple filter for insights (client-side)

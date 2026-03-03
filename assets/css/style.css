@@ -357,3 +357,56 @@ textarea.form-control { min-height: 130px; resize: vertical; }
   .stats-grid { grid-template-columns: 1fr; }
   .process-steps { grid-template-columns: 1fr; gap: 30px; }
 }
+
+/* ── Language Switcher ── */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 20px;
+  padding: 3px;
+  margin-left: 14px;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 11px;
+  border-radius: 16px;
+  border: none;
+  background: transparent;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: rgba(255,255,255,0.55);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  font-family: var(--font-body);
+  line-height: 1;
+}
+.lang-btn:hover { color: rgba(255,255,255,0.85); }
+.lang-btn.active {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+}
+/* Mobile menu switcher */
+.lang-switcher--mobile {
+  margin: 12px 20px 4px;
+  align-self: flex-start;
+  background: rgba(10,31,61,0.06);
+  border-color: var(--border);
+}
+.lang-switcher--mobile .lang-btn {
+  color: var(--text-medium);
+}
+.lang-switcher--mobile .lang-btn:hover,
+.lang-switcher--mobile .lang-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .lang-switcher:not(.lang-switcher--mobile) { display: none; }
+}
