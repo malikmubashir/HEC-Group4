@@ -7,28 +7,29 @@ on:
 
 jobs:
   deploy:
-    name: Deploy via SSH to cPanel
+    name: Deploy via SCP to cPanel
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Deploy files via rsync over SSH
-        uses: easingthemes/ssh-deploy@main
+      - name: Deploy files via SCP
+        uses: appleboy/scp-action@v0.1.7
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDzvc --delete --exclude='.git' --exclude='.github' --exclude='node_modules'"
-          SOURCE: "./"
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.REMOTE_TARGET }}
-          EXCLUDE: ".git/, .github/, node_modules/, .env"
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          source: "*.html,*.php,*.xml,*.txt,assets/,sitemap.xml,robots.txt,llms.txt,.htaccess"
+          target: ${{ secrets.REMOTE_TARGET }}
+          strip_components: 0
+          overwrite: true
 
       - name: Notify on success
         if: success()
-        run: echo "✅ Deployment to globalapex.net completed successfully!"
+        run: echo "Deployment to globalapex.net completed successfully!"
 
       - name: Notify on failure
         if: failure()
-        run: echo "❌ Deployment failed. Check SSH secrets and server connectivity."
+        run: echo "Deployment failed. Check SSH secrets and server connectivity."
