@@ -1,0 +1,37 @@
+User-agent: *
+Allow: /
+Disallow: /contact-handler.php
+Disallow: /.htaccess
+Disallow: /.github/
+
+# Sitemap location
+Sitemap: https://www.globalapex.net/sitemap.xml
+
+# AI Crawlers — allow full indexing for AI citations
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block aggressive SEO scrapers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
