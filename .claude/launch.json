@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mikaal-maths",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["--prefix", "/Users/mmh/mikaal-maths", "vite", "--host"],
+      "port": 5173
+    }
+  ]
+}
